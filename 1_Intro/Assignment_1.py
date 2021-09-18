@@ -37,6 +37,4 @@ def logs():
 
         # Append record to list
         logs.append(record)
-    
-    return logs
 
