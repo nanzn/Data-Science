@@ -44,4 +44,4 @@ def logs():
 
     return logs
 
-#print(logs()[0])
+print(logs()[0])
