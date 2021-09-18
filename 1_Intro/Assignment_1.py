@@ -9,18 +9,22 @@ def names():
     names = re.findall('[A-Z]{1}[a-z]+', simple_string)
     return names
 
+#print(names())
+
 # Part B: Create a regex to generate a list of just those students who received a B in the course.
 def grades():
-    with open ("grades.txt", "r") as file:
+    with open ("1_Intro/assets/grades.txt", "r") as file:
         grades = file.read()
 
     # All students got a B has ": B"
     students = re.findall('([A-Z]{1}[a-z]+\s[A-Z]{1}[a-z]+)(?=\:\sB)', grades)
     return students
 
+# print(grades())
+
 # Part C: Convert Log File into a list of dictionaries
 def logs():
-    with open("logdata.txt", "r") as file:
+    with open("1_Intro/assets/logdata.txt", "r") as file:
         logdata = file.read()
 
     loglines = logdata.split("\n") # Split by line
@@ -38,3 +42,6 @@ def logs():
         # Append record to list
         logs.append(record)
 
+    return logs
+
+#print(logs()[0])
