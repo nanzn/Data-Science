@@ -192,5 +192,3 @@ def answer_thirteen():
         series.append('{:,}'.format(pop))
     dataset['Pop1'] = series
     return dataset['Pop1']
-
-print(answer_thirteen())
