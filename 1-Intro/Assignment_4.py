@@ -299,7 +299,7 @@ def nfl_correlation():
      'San Francisco 49ers':'San Francisco Bay Area',
      'Arizona Cardinals':'Phoenix'}) 
     # Convert W-L% to numeric
-    nfl_df['W-L%'] = to_numeric(nfl_df['W-L%'])
+    nfl_df['W-L%'] = pd.to_numeric(nfl_df['W-L%'])
     nfl_df.reset_index(inplace=True, drop=True)
     
     # Merge and Group
